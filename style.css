@@ -14,7 +14,6 @@ body{
     width: 60%;
     margin-left: 20%;
     margin-top: 10%;
-    margin-right: 20%;
     border-radius: 2px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 20px;
@@ -46,10 +45,9 @@ button{
 #result-page ol{
     text-align: left;
 }
-@media screen and (max-width:600px){
-    #app{
-       
-        width:80%;
+@media screen and (max-width: 600px) {
+    #app {
+        margin-left: 15%;
+        margin-right: 20%;
     }
 }
-
