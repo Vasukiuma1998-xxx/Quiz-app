@@ -1,0 +1,56 @@
+*
+{
+    margin: 0;
+   
+}
+body{
+    font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  text-align: center;
+  
+}
+#app{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-right: 20%;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    
+    
+}
+.hidden{
+    display: none;
+}
+button{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border: none;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+}
+#instruct-page ul{
+    text-align: left;
+}
+.maildiv{
+    margin-top: 5px;
+}
+#question{
+    text-align: left;
+}
+#result-page ol{
+    text-align: left;
+}
+@media screen and (max-width:600px){
+    #app{
+        margin-left: 7%;
+        margin-right: 5%;
+        width:80%;
+    }
+}
+

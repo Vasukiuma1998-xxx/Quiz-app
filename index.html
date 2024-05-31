@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- start page -->
+        
+        <div id="start-page">
+            <h1>Coding Quiz Challenge</h1>
+            <form id="start-form">
+                <div>
+                    <label for="player-name-input">Name</label>
+                    <input type="text" id="player-name-input" required>
+                </div>
+                <div class="maildiv">
+                    <label for="player-email-input">Mailid</label>
+                    <input type="email" id="player-email-input" required>
+                </div>
+                <button type="submit" id="start-btn">Start Quiz</button>
+            </form>
+        </div>
+        <!-- instruction-page -->
+        <div id="instruct-page" class="hidden">
+            <h1>Instructions </h1>
+            <ul>
+                <li>The quizzes consists of questions carefully designed to help you self-assess your comprehension of the information presented on the topics covered in the module.</li>
+                <li>No data will be collected on the website regarding your responses or how many times you take the quiz.</li>
+                <li>Try to answer the following code-related questions within the time limit.</li>
+                <li>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</li>
+            </ul>
+            <button id="goto-btn">Go to Quiz</button>
+        </div>
+        <!-- quiz-page -->
+        <div id="quiz-page" class="hidden">
+            <div id="timer"></div>
+            <div id="question"></div>
+            <div id="navigation-buttons">
+                <button id="prev-btn" class="hidden">Previous</button>
+                <button id="next-btn">Next</button>
+                <button id="submit-btn" class="hidden">Submit</button>
+            </div>
+        </div>
+        <!-- score page -->
+        <div id="score-page" class="hidden">
+            <h2>Your Score</h2>
+            <p>Player Name: <span id="player-name"></span></p>
+            <p>Player Email: <span id="player-email"></span></p>
+            <p>Score: <span id="score"></span></p>
+            
+            <button id="restart-btn">Restart Quiz</button>
+            <button id="result">View Result</button>
+        </div>
+
+        <div id="result-page" class="hidden">
+            <h2>Answers</h2>
+            <ol>
+                <li>Hyperlinks and Text Markup Language</li>
+                <li>Google</li>
+                <li>/</li>
+                <li>.html</li>
+                <li>Colspan</li>
+            </ol>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
