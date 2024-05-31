@@ -11,9 +11,8 @@ body{
   
 }
 #app{
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 10%;
+   width: 80%;
+   margin: 10%;
     border-radius: 2px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 20px;
@@ -45,9 +44,8 @@ button{
 #result-page ol{
     text-align: left;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     #app {
-        margin-left: 15%;
-        margin-right: 20%;
+        width: 70%;
     }
 }
