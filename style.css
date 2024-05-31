@@ -48,8 +48,7 @@ button{
 }
 @media screen and (max-width:600px){
     #app{
-        margin-left: 5%;
-        margin-right: 5%;
+       
         width:80%;
     }
 }
