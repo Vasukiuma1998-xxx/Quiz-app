@@ -64,7 +64,7 @@ restartBtn.addEventListener('click', () => {
 
 const questions = [
     {
-        question: "What does HTML stand for?",
+        question: "1. What does HTML stand for?",
         answer: [
             "Hyperlinks and Text Markup Language",
             "Hyper Text Markup Language",
@@ -73,22 +73,22 @@ const questions = [
         correct: 1
     },
     {
-        question: "Who is making the Web standards?",
+        question: "2. Who is making the Web standards?",
         answer: ["Mozilla", "Microsoft", "Google", "The World Wide Web Consortium"],
         correct: 3
     },
     {
-        question: "Which character is used to indicate an end tag? ",
+        question: "3. Which character is used to indicate an end tag? ",
         answer: ["/","*","^",">"],
         correct: 1
     },
     {
-        question:'HTML program is saved using _________ extension.',
+        question:'4. HTML program is saved using _________ extension.',
         answer:[".htl",".html",".hml",".htlm"],
         correct:1
     },
     {
-        question:"Which of the following is used increase the col width?",
+        question:"5. Which of the following is used increase the col width?",
         answer:["cellspacing","cellpadding","Row span","Col span"],
         correct:3
     }
@@ -134,7 +134,10 @@ const totalTimeInSeconds = 300; // 5 minutes
 let timeRemaining = totalTimeInSeconds;
 let timerInterval;
 
+
+
 function startTimer() {
+    updateTimerDisplay();
     timerInterval = setInterval(() => {
         timeRemaining--;
         if (timeRemaining <= 0) {
@@ -146,7 +149,6 @@ function startTimer() {
         updateTimerDisplay();
     }, 1000);
 }
-
 function updateTimerDisplay() {
     const minutes = Math.floor(timeRemaining / 60);
     const seconds = timeRemaining % 60;
